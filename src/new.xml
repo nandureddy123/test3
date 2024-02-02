@@ -1,0 +1,23 @@
+<suite name="orangehrm">
+	<test name="login page valid">
+		<parameter name="adminuid" value="Admin"></parameter>
+		<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name="run.testcases"></class>
+		</classes>
+	</test>
+	<test name="inavild data">
+		<parameter name="uid" value="abc"></parameter>
+		<parameter name="pwd" value="xyz"></parameter>
+		<classes>
+			<class name="run.invalid"></class>
+		</classes>
+	</test>
+	<test name="employee registration">
+		<parameter name="fname" value="arnold"></parameter>
+		<parameter name="lname" value="john"></parameter>
+		<classes>
+			<class name="run.employeeregistration"></class>
+		</classes>
+	</test>
+</suite>

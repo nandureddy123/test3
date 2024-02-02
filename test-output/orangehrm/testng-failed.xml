@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [orangehrm]">
+  <test thread-count="5" name="inavild data(failed)">
+    <parameter name="uid" value="abc"/>
+    <parameter name="pwd" value="xyz"/>
+    <classes>
+      <class name="run.invalid">
+        <methods>
+          <include name="ivaliddata"/>
+          <include name="launchapp"/>
+          <include name="closeapp"/>
+        </methods>
+      </class> <!-- run.invalid -->
+    </classes>
+  </test> <!-- inavild data(failed) -->
+  <test thread-count="5" name="employee registration(failed)">
+    <parameter name="fname" value="arnold"/>
+    <parameter name="lname" value="john"/>
+    <classes>
+      <class name="run.employeeregistration">
+        <methods>
+          <include name="checkempreg"/>
+          <include name="launchapp"/>
+          <include name="closeapp"/>
+          <include name="adminlogout"/>
+          <include name="adminlogin"/>
+        </methods>
+      </class> <!-- run.employeeregistration -->
+    </classes>
+  </test> <!-- employee registration(failed) -->
+</suite> <!-- Failed suite [orangehrm] -->
